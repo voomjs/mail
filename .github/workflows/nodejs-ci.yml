@@ -1,0 +1,31 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    env:
+      MAIL_HOST: 127.0.0.1
+      MAIL_PORT: 1025
+      MAIL_USER: mail-user
+      MAIL_PASS: mail-pass
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Docker
+        run: docker-compose up -d
+      - run: sleep 20
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - run: npm install
+      - run: npm run lint
+      - run: npm run test

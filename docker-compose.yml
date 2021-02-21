@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+
+  mailtrap:
+    image: spridev/mailtrap
+    environment:
+      - MAILTRAP_USER=${MAIL_USER}
+      - MAILTRAP_PASS=${MAIL_PASS}
+    ports:
+      - 1025:1025
+      - 8025:8025
+    expose:
+      - 1025
+      - 8025

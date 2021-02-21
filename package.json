@@ -1,0 +1,43 @@
+{
+  "name": "@voom/mail",
+  "description": "SMTP wrapper for Hapi",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "git://github.com/voomjs/mail",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "hapi",
+    "plugin",
+    "email",
+    "smtp"
+  ],
+  "dependencies": {
+    "joi": "17.x.x",
+    "nodemailer": "6.x.x"
+  },
+  "devDependencies": {
+    "@hapi/code": "8.x.x",
+    "@hapi/hapi": "20.x.x",
+    "@hapi/hoek": "9.x.x",
+    "@hapi/lab": "24.x.x",
+    "@hapi/vision": "6.x.x",
+    "@hapi/wreck": "17.x.x",
+    "dotenv": "8.x.x",
+    "mustache": "4.x.x",
+    "standard": "16.x.x"
+  },
+  "scripts": {
+    "test": "lab",
+    "test-html": "lab -r html -o coverage.html",
+    "lint": "standard --fix"
+  },
+  "standard": {
+    "env": [
+      "es6",
+      "node"
+    ]
+  }
+}
