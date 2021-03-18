@@ -15,19 +15,19 @@
     "smtp"
   ],
   "dependencies": {
-    "joi": "17.x.x",
-    "nodemailer": "6.x.x"
+    "joi": "^17.0.0",
+    "nodemailer": "^6.0.0"
   },
   "devDependencies": {
-    "@hapi/code": "8.x.x",
-    "@hapi/hapi": "20.x.x",
-    "@hapi/hoek": "9.x.x",
-    "@hapi/lab": "24.x.x",
-    "@hapi/vision": "6.x.x",
-    "@hapi/wreck": "17.x.x",
-    "dotenv": "8.x.x",
-    "mustache": "4.x.x",
-    "standard": "16.x.x"
+    "@hapi/code": "^8.0.0",
+    "@hapi/hapi": "^20.0.0",
+    "@hapi/hoek": "^9.0.0",
+    "@hapi/lab": "^24.0.0",
+    "@hapi/vision": "^6.0.0",
+    "@hapi/wreck": "^17.0.0",
+    "dotenv": "^8.0.0",
+    "mustache": "^4.0.0",
+    "standard": "^16.0.0"
   },
   "scripts": {
     "test": "lab",
