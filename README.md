@@ -1,6 +1,6 @@
 # @voom/mail
 
-#### SMTP wrapper for [Hapi](https://hapi.dev).
+#### SMTP client for [Hapi](https://hapi.dev).
 
 This plugin exposes a mail instance within your server.
 
